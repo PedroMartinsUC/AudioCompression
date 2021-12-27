@@ -1,0 +1,29 @@
+Instalação:
+pip installation deflate
+
+OU (se tiver a usar o Pycharm)
+
+Ir a file -> settings -> Project -> Python Interpreter -> Carregar no "+" e procurar pela biblioteca deflate.
+
+
+Como usar:
+import deflate
+
+#PARA COMPRESSÃO
+level = 6  (nos testes usamos este level uma vez que é o default)
+
+with open("<filenameInput>"  , 'rb') as f:   #Para ir buscar os dados em bytearray
+    data = bytearray(f.read())
+
+dados = deflate.gzip_compress(data, level)    #Faz a sua compressão
+
+with open("<filenameOutput>"  , 'wb') as f:   #Guarda os dados comprimidos noutro ficheiro
+    f.write(bytearray(deflate))
+
+
+#PARA DESCOMPRESSÃO (PEGANDO NOS DADOS ACIMA)
+
+descomp = deflate.gzip_decompress(dados)
+
+with open("<filenameDescomp>"  , 'wb') as f:
+    f.write(bytearray(descomp))

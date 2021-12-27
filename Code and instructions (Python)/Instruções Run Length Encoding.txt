@@ -1,0 +1,9 @@
+import RleFunc   #Codigo disponibilizado junto com o trabalho
+
+with open(<filenameInput>  , 'rb') as f:   #Para ir buscar os dados em bytearray
+    data = bytearray(f.read())
+
+rle=RleFunc.rle_encode(data)    #Faz a sua compressão
+
+with open(<filenameOutput>  , 'wb') as f:
+    f.write(bytearray(rle, encoding="utf-8"))   #Guarda os dados comprimidos noutro ficheiro

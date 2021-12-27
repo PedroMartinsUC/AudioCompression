@@ -1,0 +1,17 @@
+Instalação:
+pip install dahuffman
+
+OU (se tiver a usar o Pycharm)
+
+Ir a file -> settings -> Project -> Python Interpreter -> Carregar no "+" e procurar pela biblioteca dahuffman.
+
+Como usar:
+import dahuffman
+
+with open("<filenameInput"  , 'rb') as f:   #Para ir buscar os dados em bytearray
+    data = bytearray(f.read())
+
+huff=dahuffman.HuffmanCodec.from_data(data).encode(data)    #Faz a sua compressão
+
+with open("<filenameoutput>"  , 'wb') as f:   #Guarda os dados comprimidos noutro ficheiro
+    f.write(bytearray(huff))

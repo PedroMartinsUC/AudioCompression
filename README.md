@@ -1,2 +1,2 @@
-# AudioCompression
-IEEE paper concerning lossless audio compression techniques
+# Image Compression
+IEEE paper concerning lossless image compression techniques

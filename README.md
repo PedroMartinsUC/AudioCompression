@@ -1,32 +1,25 @@
-# TI_Project-Compression_Of_Files
+# TI_Project-Compression_Of_Images
 
 - [x] Finished
 
-## Index
+## Index:
 - [Description](#description)
-- [Technologies used](#technologies-used)
-- [Notes important to read](#notes-important-to-read)
-- [Authors](#authors)
+- [To run this project](#to-run-this-project)
 
-## Description
-This was the 2nd project developed for Information Theory subject @University of Coimbra, Informatics Engineering <br>
-Consists in develop a group of programs that apply some compression algorithms in some files. Also helps to do a study about the efficiency of this algorithms.
+## Description:
+In 2020 it was asked to do a study of some algorithms of compression applied on images vs the algorithm of PNG.<br>
+(Honestly this version is a sh**, if you want some interesting compression go to version of 2021)
 
-#### Main Languages:
-![](https://img.shields.io/badge/Python-333333?style=flat&logo=python&logoColor=4F74DA)
-
-## Technologies used:
-1. Python
-    - [Version 3.9](https://www.python.org/downloads/release/python-390/)
-2. Libraries
-    - [DaHuffman](https://pypi.org/project/dahuffman/) (for version 2020 and 2021)
-    - [Deflate](https://pypi.org/project/deflate/) (only for version 2020)
-    - [Pickle](https://docs.python.org/3/library/pickle.html#module-pickle) (only for version 2021)
-
-
-## Notes important to read:
-   - In this repository I have a version of this work from 2020 and from 2021. The way to run this 2 versions it's different so check the respective folders to know how to run.
-
-## Authors:
-- [João Silva](https://github.com/ikikara)
-- [Pedro Martins](https://github.com/PedroMartinsUC)
+## To run this project:
+[WARNING] Python 3.9 and the libraries refered must be installed <br>
+This files .py act separately so:
+- Deflate.py<br>
+  Put name of the file that you want to compress on the first *with open(*<br>
+  Put name of the file that you want to give to save compressed data on the second *with open(*<br>
+  (for decompression you have to use the variable *dados* used on compression and put the name of the file that you want to decompress on *with open(*<br>
+- RleFunc.py<br>
+  This file works as a import, you can use the same steps that we use on *Deflate.py*<br>
+  (decompression was not made)<br>
+- Huffman.py<br>
+  You can use the same steps that we use on *Deflate.py*<br>
+  (decompression was not made)
